@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "npx webpack serve",
-    "build:dev": "npm run webpack",
+    "build:dev": "npx webpack",
     "cy:run": "cypress run",
     "start:wait-on": "npm start & wait-on http://localhost:8888"
   },
