@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import App from './child_repo/index'
+import App from './child_repo'
 
 const TheApp = (
   <App />
