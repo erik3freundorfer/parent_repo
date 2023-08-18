@@ -4,14 +4,16 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack serve",
+    "build:dev": "npm run webpack",
+    "cy:run": "cypress run",
+    "start:wait-on": "npm start & wait-on http://localhost:8888"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "wait-on": "^7.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
@@ -19,8 +21,10 @@
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.3",
+    "cypress": "^12.17.4",
     "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

@@ -1,4 +1,4 @@
-import path from 'path'
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -9,6 +9,9 @@ module.exports = {
     clean: true,
   },
   mode: 'development',
+  devServer: {
+    port: 8888,
+  },
   module: {
     rules: [
       {
