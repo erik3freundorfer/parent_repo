@@ -11,8 +11,8 @@ jobs:
         with:
           submodules: true
 
-      - name: Cypress run
+      - name: Integration test
         uses: cypress-io/github-action@v5
         with:
           build: npm run build:dev
-          start: npm start
+          start: npm run start:wait-on
