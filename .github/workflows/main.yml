@@ -3,7 +3,7 @@ name: Integration Tests
 on: 
   push:
     paths:
-      - child_repo/
+      - child_repo
 
 jobs:
   cypress-run:
