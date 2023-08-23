@@ -1,4 +1,5 @@
 const path = require('path');
+const CONFIG = require('./config')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
   },
   mode: 'development',
   devServer: {
-    port: 8888,
+    port: CONFIG.PORT,
   },
   module: {
     rules: [
